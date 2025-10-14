@@ -19,4 +19,5 @@ Implements a Java CLI application that fetches and analyses hourly electricity p
 - Confirmed robustness when price data is missing for some dates (skips those hours).
 
 ## Issue
-Related to #2 
+[Exercise 1 – CLI program for checking electricity prices](https://github.com/fungover/exercise2025/issues/2)
+
