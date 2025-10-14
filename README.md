@@ -1,36 +1,22 @@
-## 🧪 How to Work on the Exercises
+Implements a Java CLI application that fetches and analyses hourly electricity prices, with optional CSV‑based consumption cost calculation.
 
-Each exercise is described in a GitHub Issue. Follow these steps to complete an exercise and submit your solution:
+## Features
+- CLI prompts for Swedish price zone (SE1–SE4).
+- Fetches hourly electricity prices from [elprisetjustnu.se](https://elprisetjustnu.se) for today and tomorrow.
+- Analyses and displays:
+  - Average price
+  - Cheapest and most expensive hour
+  - Best start times for 2h, 4h, and 8h charging windows
+- Lists all hourly prices with SEK, EUR, and exchange rate.
+- Uses Java record for the Consumption data model to reduce boilerplate and keep the code concise. 
 
-### 📥 1. Clone or Fork the Repository
-```bash
-git clone https://github.com/fungover/exercise2025.git
-```
-Or fork the repository via GitHub and clone your fork.
+- **Extra credit:** Optional import of a CSV file (`yyyy-MM-dd HH:mm,kWh`) to calculate total cost based on actual consumption data. To test simply press "j" and write consumption.csv to load. 
+- Handles missing or invalid price data gracefully.
 
-### 🌱 2. Create a Branch
-Create a new branch named using the format: your-github-username/exerciseNumber
+## Testing
+- Verified functionality with both large datasets and a minimal 7‑row `consumption.csv`.
+- Cross‑checked total cost calculations against known price data from the API.
+- Confirmed robustness when price data is missing for some dates (skips those hours).
 
-Example for user githubuser working on Exercise 1:
-
-```bash
-git checkout -b githubuser/exercise1
-```
-
-### 🛠️ 3. Implement Your Solution
-Follow the instructions in the corresponding issue. If anything is unclear, ask questions by commenting directly on the issue.
-
-### 🚀 4. Push Your Branch
-```bash
-git push origin githubuser/exercise1
-```
-
-### 📬 5. Create a Pull Request
-Open a Pull Request (PR) from your branch.
-
-Link the PR to the issue you're solving.
-
-Include a clear description of your solution.
-
-### 💬 6. Feedback and Iteration
-Reviewers may leave comments or suggestions. Update your branch and push changes until the PR is approved.
+## Issue
+Related to #2 
