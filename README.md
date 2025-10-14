@@ -18,6 +18,6 @@ Implements a Java CLI application that fetches and analyses hourly electricity p
 - Cross‑checked total cost calculations against known price data from the API.
 - Confirmed robustness when price data is missing for some dates (skips those hours).
 
-## Issue
+## School assignment Issue
 [Exercise 1 – CLI program for checking electricity prices](https://github.com/fungover/exercise2025/issues/2)
 
